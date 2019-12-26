@@ -1,7 +1,6 @@
-﻿#include <takoyaki/TakoyakiApp.h>
+﻿#include <iostream>
 
 int main() {
-	ty::TakoyakiApp app;
-
+	std::cout << "Annyeong Segye!" << std::endl;
 	return 0;
 }
