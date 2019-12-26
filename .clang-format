@@ -1,0 +1,15 @@
+AllowShortFunctionsOnASingleLine: Inline
+BasedOnStyle: Google
+BinPackArguments: false
+BinPackParameters: false
+BreakConstructorInitializers: BeforeComma
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+ColumnLimit: 120
+AccessModifierOffset: '-4'
+IndentWidth: '4'
+Language: Cpp
+TabWidth: '4'
+UseTab: ForIndentation
+IndentPPDirectives: AfterHash
+AlignConsecutiveAssignments: true
+IndentCaseLabels: false
