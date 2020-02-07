@@ -12,5 +12,5 @@ if(NOT cotire_POPULATED)
 	FetchContent_Populate(cotire)
 endif()
 
-include(${cotire_SOURCE_DIR}/cmake/cotire.cmake)
+include(${cotire_SOURCE_DIR}/CMake/cotire.cmake)
 set(COTIRE_TARGETS_FOLDER "thirdparty//cotire")
