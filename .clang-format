@@ -13,3 +13,4 @@ UseTab: ForIndentation
 IndentPPDirectives: AfterHash
 AlignConsecutiveAssignments: true
 IndentCaseLabels: false
+IncludeBlocks: Preserve
