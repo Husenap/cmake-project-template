@@ -19,4 +19,6 @@ jobs:
       run: cmake --build .build/
 
     - name: Test
-      run: ctest .build/
+      run: |
+        cd .build/
+        ctest .
