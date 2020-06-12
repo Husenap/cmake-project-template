@@ -1,0 +1,19 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: [ubuntu-latest, windows-latest, macoss-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Generate
+      run: cmake . -B.build -Ax64
+      
+    - name: Build
+      run: cmake --build .build/
+
+    - name: Test
+      run: ctest .build/
