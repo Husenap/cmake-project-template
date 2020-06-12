@@ -1,16 +1,13 @@
-cmake_minimum_required(VERSION 3.5.0)
+cmake_minimum_required(VERSION 3.16)
 set(PROJECT_NAME "project_name")
 project(${PROJECT_NAME} C CXX)
 
-set(CMAKE_CONFIGURATION_TYPES "Debug;Release")
-message("-- CONFIGURATION TYPES: ${CMAKE_CONFIGURATION_TYPES}")
-
 include("cmake/compiler_features.cmake")
 include("cmake/compiler_warnings.cmake")
-include("cmake/cotire.cmake")
+include("cmake/conan.cmake")
 
+set_property(GLOBAL PROPERTY CXX_STANDARD 20)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_property(GLOBAL PROPERTY PREDEFINED_TARGETS_FOLDER "predefined")
-set_property(GLOBAL PROPERTY CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_subdirectory("app")
