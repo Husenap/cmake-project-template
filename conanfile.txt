@@ -1,5 +1,6 @@
 [requires]
 glfw/3.3.2@bincrafters/stable
+gtest/1.10.0
 
 [generators]
 cmake
