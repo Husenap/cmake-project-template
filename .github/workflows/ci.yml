@@ -9,5 +9,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Generate
+      run: cmake . -B.build -Ax64 -DPROJECT_NAME_BUILD_TESTS=ON
+
+    - name: Build
+      run: cmake --build .build/
+
     - name: Test
-      run: scripts/test.bat
+      run: |
+        cd .build/
+        ctest .
+        cd ..
