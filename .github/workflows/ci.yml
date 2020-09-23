@@ -9,12 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install Conan
-      run: pip install conan
-
     - name: Generate
-      run: cmake . -B.build
-      
+      run: cmake . -B.build -Ax64 -DPROJECT_NAME_BUILD_TESTS=ON
+
     - name: Build
       run: cmake --build .build/
 
@@ -22,3 +19,4 @@ jobs:
       run: |
         cd .build/
         ctest .
+        cd ..

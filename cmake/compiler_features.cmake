@@ -1,7 +1,3 @@
-if (MSVC)
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /std:c++latest")
-else()
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++2a")
-endif()
+add_library(compiler_features INTERFACE)
 
-message("-- CMAKE_CXX_FLAGS: ${CMAKE_CXX_FLAGS}")
+target_compile_features(compiler_features INTERFACE cxx_std_20)
