@@ -9,9 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install Conan
-      run: pip install conan
-
     - name: Generate
       run: cmake . -B.build
       
