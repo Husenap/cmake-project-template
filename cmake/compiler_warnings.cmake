@@ -1,7 +1,10 @@
-add_library(compiler-warnings INTERFACE)
+add_library(compiler_warnings INTERFACE)
+
+# cmake-format: off
 
 if (MSVC)
-    target_compile_options(compiler-warnings INTERFACE 
+    target_compile_options(compiler_warnings INTERFACE 
+        /WX                     # treat warnings as errors
         /W4						# warning level 4
         /permissive-			# standards conformance https://docs.microsoft.com/en-us/cpp/build/reference/permissive-standards-conformance?view=vs-2017
         /w14242					# 'identfier': conversion from 'type1' to 'type1', possible loss of data
@@ -28,7 +31,7 @@ if (MSVC)
     	/wd4201					# nonstandard extension used : nameless struct/union
         )
 else()
-    target_compile_options(compiler-warnings INTERFACE 
+    target_compile_options(compiler_warnings INTERFACE 
         -Wall                   # reasonable and standard
         -Wextra                 # reasonable and standard
         -Wshadow                # warn the user if a variable declaration shadows one from a parent context
@@ -49,3 +52,5 @@ else()
         -Wdouble-promotion      # warn if float is implicit promoted to double
         -Wformat=2)             # warn on security issues around functions that format output (ie printf)
 endif()
+
+# cmake-format: on
