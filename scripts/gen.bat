@@ -1,1 +1,1 @@
-cmake . -B.build -Ax64 -DPROJECT_NAME_BUILD_TESTS=OFF
+cmake . -B.build -Ax64 -Dproject_name_BUILD_TESTS=OFF

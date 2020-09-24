@@ -3,8 +3,8 @@ include(FetchContent)
 
 FetchContent_Declare(
     googletest
-    GIT_REPOSITORY https://github.com/google/googletest.git
-    GIT_TAG a4ab0ab # This includes a fix when using C++20
+    GIT_REPOSITORY  https://github.com/google/googletest.git
+    GIT_TAG         a4ab0ab # This includes a fix when using C++20
 )
 
 FetchContent_MakeAvailable(googletest)
