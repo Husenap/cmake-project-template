@@ -10,12 +10,15 @@ include("cmake/compiler_warnings.cmake")
 
 add_subdirectory("app")
 
-set(PROJECT_NAME_FOLDER
+set(${PROJECT_NAME}_FOLDER
     ${PROJECT_NAME}
     CACHE STRING "The folder that ${PROJECT_NAME} projects will be placed in.")
 
-option(PROJECT_NAME_BUILD_TESTS "If unit tests should be build." OFF)
-if(PROJECT_NAME_BUILD_TESTS)
+option(${PROJECT_NAME}_BUILD_TESTS
+    "If the ${PROJECT_NAME} tests are built in addition to the ${PROJECT_NAME} library."
+    ON)
+
+if(${PROJECT_NAME}_BUILD_TESTS)
     enable_testing()
     include(GoogleTest)
     include("thirdparty/googletest.cmake")
