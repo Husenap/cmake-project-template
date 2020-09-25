@@ -12,4 +12,4 @@ target_link_libraries(${target_name}
 
 source_group("src" FILES "src/main.cpp")
 
-set_target_properties(${target_name} PROPERTIES FOLDER ${PROJECT_NAME}_FOLDER)
+set_target_properties(${target_name} PROPERTIES FOLDER ${${PROJECT_NAME}_FOLDER})

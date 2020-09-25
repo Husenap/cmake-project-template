@@ -1,6 +1,6 @@
-name: Build
+name: Windows
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   build:
@@ -10,8 +10,8 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Generate
-      run: cmake . -B.build -Ax64
-
+      run: cmake . -B.build -DCMAKE_BUILD_TYPE=Debug
+      
     - name: Build
       run: cmake --build .build/
 
@@ -19,4 +19,3 @@ jobs:
       run: |
         cd .build/
         ctest .
-        cd ..

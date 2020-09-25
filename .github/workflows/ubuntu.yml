@@ -1,0 +1,21 @@
+name: Ubuntu
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Generate
+      run: cmake . -B.build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=gcc-9 -DCMAKE_CXX_COMPILER=g++-9
+      
+    - name: Build
+      run: cmake --build .build/
+
+    - name: Test
+      run: |
+        cd .build/
+        ctest .
