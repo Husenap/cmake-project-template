@@ -2,4 +2,5 @@
 
 Uses CMake for generating.
 
-![Build](https://github.com/Husenap/cmake-project-template/workflows/Build/badge.svg)
+![Windows](https://github.com/Husenap/cmake-project-template/workflows/Windows/badge.svg)
+![Ubuntu](https://github.com/Husenap/cmake-project-template/workflows/Ubuntu/badge.svg)
