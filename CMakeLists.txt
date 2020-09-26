@@ -16,11 +16,11 @@ option(${PROJECT_NAME}_BUILD_TESTS
     "If the ${PROJECT_NAME} tests are built in addition to the ${PROJECT_NAME} library."
     ON)
 
-add_subdirectory("app")
+add_subdirectory("project_name")
 
 if(${${PROJECT_NAME}_BUILD_TESTS})
     enable_testing()
     include(GoogleTest)
     include("thirdparty/googletest.cmake")
-    add_subdirectory("test")
+    add_subdirectory("project_name_test")
 endif()

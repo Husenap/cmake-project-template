@@ -1,4 +1,4 @@
-set(target_name "app")
+set(target_name "project_name")
 
 set(src_files
     "src/main.cpp")
