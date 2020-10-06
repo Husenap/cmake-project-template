@@ -7,7 +7,7 @@ BinPackArguments: false
 BinPackParameters: false
 BreakConstructorInitializers: BeforeComma
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
-ColumnLimit: 120
+ColumnLimit: 80
 IndentWidth: '4'
 IndentPPDirectives: AfterHash
 IndentCaseLabels: false
