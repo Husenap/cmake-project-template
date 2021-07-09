@@ -17,12 +17,12 @@ jobs:
 
     - name: Generate
       shell: bash
-      run: scripts/gen -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
+      run: bash scripts/gen -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
       
     - name: Build
       shell: bash
-      run: scripts/build
+      run: bash scripts/build
 
     - name: Test
       shell: bash
-      run: scripts/test
+      run: bash scripts/test
