@@ -1,6 +1,5 @@
+[![Build](https://github.com/Husenap/cmake-project-template/actions/workflows/build.yml/badge.svg)](https://github.com/Husenap/cmake-project-template/actions/workflows/build.yml)
+
 # cmake-project-template
 
-Uses CMake for generating a basic project template.
-
-![Windows](https://github.com/Husenap/cmake-project-template/workflows/Windows/badge.svg)
-![Ubuntu](https://github.com/Husenap/cmake-project-template/workflows/Ubuntu/badge.svg)
+Basic C++ project template using CMake.
