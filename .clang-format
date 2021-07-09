@@ -8,8 +8,10 @@ BinPackParameters: false
 BreakConstructorInitializers: BeforeComma
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 ColumnLimit: 80
-IndentWidth: '4'
-IndentPPDirectives: AfterHash
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+IndentPPDirectives: None
 IndentCaseLabels: false
 IncludeBlocks: Regroup
 IncludeCategories:
@@ -20,5 +22,3 @@ IncludeCategories:
   - Regex:        '".*"'
     Priority:     3
 Language: Cpp
-TabWidth: '4'
-UseTab: ForIndentation
