@@ -1,10 +1,10 @@
 set(target_name "new_project_name")
 
 set(src_precompiled
-    "src/new_project_name/precompiled.h")
+    "src/new_project_name/precompiled.hpp")
 
 set(src_new_project_name
-    "src/new_project_name/new_project_name.h")
+    "src/new_project_name/new_project_name.hpp")
 
 set(src_files
     ${src_precompiled}
